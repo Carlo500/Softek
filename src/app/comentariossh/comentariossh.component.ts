@@ -12,10 +12,7 @@ export class ComentariosshComponent {
   @Output()
   llamadaPadre:EventEmitter<string> = new EventEmitter();
   nombre:string=" ";
-  onSubmit(){
+  enviarPadre() {
     this.llamadaPadre.emit(this.nombre);
-  }
-  enviarPadre(nombres:string) {
-    this.llamadaPadre.emit(nombres);
     }
 }
